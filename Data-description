@@ -1,0 +1,45 @@
+Detailed description of the dataset variables:
+
+● opt_ID: The identifier of an opportunity.
+● opt_name_data: A concatenation of data-related words found in the title of
+the opportunity (a predefined list of data-related words was used to search for
+matches within each opportunity title). The words are separated by spaces. 
+● opt_desc_data: A concatenation of data-related words found in the
+opportunity description written by the salesperson (a predefined list of
+data-related words was used to search for matches within each description). If
+the cell is empty, no data-related words were identified in the opportunity
+description.
+○ Note: Words may sometimes appear truncated (e.g., Analyti), due to
+the algorithm used for extraction.
+● opt_name_size: The total number of words in the opportunity's title.
+● opt_desc_size: The total number of words in the opportunity's description.
+● id_client: The identifier of the client.
+● client_class: The classification of the client, indicating their importance to the
+company (based on revenue).
+● segment: The department within the company where the opportunity is
+referenced.
+● duration: The estimated duration of the project (in days).
+● opt_class: The classification of the opportunity, indicating its importance to
+the company.
+● sales_capture: The first and last name of the salesperson who logged the
+opportunity (data has been anonymized).
+● count_aai: The total number of "AAI" opportunities identified by the
+salesperson.
+● pricing_structure: The agreed-upon pricing structure with the client.
+● business_entity: The business entity responsible for the opportunity.
+● client_location: The location where the opportunity will take place.
+● competition_type: Indicates whether the company (ABC Sport Corp) is
+competing to win this opportunity.
+● alliances: A flag indicating whether the opportunity involves a partnership
+with another data-related company.
+● quarter: The fiscal year and quarter of the opportunity's sale (e.g., FY20Q3 =
+Q3 2020).
+● mergers: A flag indicating whether the opportunity will be led by a subsidiary
+of the company and is related to data.
+● stage: The progress status of the opportunity (0 being the least advanced, 3B
+being the most advanced). Opportunities in earlier stages are generally less
+detailed, as salespeople update them progressively.
+● win_prob: The salesperson's estimated probability of winning the opportunity.
+● total_current_rev: The projected revenue for this opportunity (in dollars).
+● aai_label: Indicates whether the opportunity was labeled as "data" by the
+salesperson.
